@@ -15,7 +15,7 @@ conn.once('open', () => {
 });
 
 // connection
-mongoose.connect('mongodb://localhost/advertisements', { useNewUrlParser: true });
+mongoose.connect('mongodb://localhost/ads', { useNewUrlParser: true });
 
 // export connection
 module.exports = conn;
