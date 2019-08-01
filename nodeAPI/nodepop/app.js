@@ -26,6 +26,7 @@ require('./models/Ad');
  * API routes
  */
 app.use('/api/ads', require('./routes/api/ads'));
+app.use('/images/anuncios', require('./routes/public/images'));
 
 /**
  * webapp routes

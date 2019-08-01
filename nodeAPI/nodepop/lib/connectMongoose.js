@@ -10,8 +10,10 @@ conn.on('error', err => {
     process.exit(1);
 });
 
-conn.once('open', () => {
+conn.once('open', async () => {
     console.log('MongoDB connnection success at:', conn.name);
+
+    
 });
 
 // connection
