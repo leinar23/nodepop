@@ -26,13 +26,14 @@ require('./models/Ad');
  * API routes
  */
 app.use('/api/ads', require('./routes/api/ads'));
-app.use('/images/anuncios', require('./routes/public/images'));
+app.use('/images/anuncios', require('./routes/images'));
 
 /**
  * webapp routes
  */
 app.use('/', require('./routes/index'));
 app.use('/users', require('./routes/users'));
+app.use('/nodepop', require('./routes/ads'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

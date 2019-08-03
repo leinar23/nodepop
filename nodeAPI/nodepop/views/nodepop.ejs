@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <% ads.forEach(element => {  %>
+    <ul>
+        <li>Nombre: <%= element.nombre %></li>
+        <li>Precio: <%= element.precio %></li>
+    </ul>
+    <% }) %>
+  </body>
+</html>
